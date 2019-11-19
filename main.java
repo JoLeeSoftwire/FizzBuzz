@@ -14,6 +14,9 @@ public class FizzBuzz {
             if(i % 7 == 0) {
                 toPrint = toPrint + "Bang";
             }
+            if(i % 11 == 0) {
+                toPrint = "Bong";
+            }
             if(toPrint.equals("")) {
                 toPrint = Integer.toString(i);
             }

@@ -11,7 +11,10 @@ public class FizzBuzz {
             if(i % 5 == 0) {
                 toPrint = toPrint + "Buzz";
             }
-            if(toPrint == "") {
+            if(i % 7 == 0) {
+                toPrint = toPrint + "Bang";
+            }
+            if(toPrint.equals("")) {
                 toPrint = Integer.toString(i);
             }
             System.out.println(toPrint);

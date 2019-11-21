@@ -1,10 +1,9 @@
 public class FizzBuzz {
 
     public static void main(String[] args) {
-        String toPrint;
 
         for(int i=1; i<=100; i++) {
-            toPrint = "";
+            String[] toPrint = new String[4];
             if(i % 3 == 0) {
                 toPrint = toPrint + "Fizz";
             }
@@ -16,6 +15,9 @@ public class FizzBuzz {
             }
             if(i % 11 == 0) {
                 toPrint = "Bong";
+            }
+            if(i % 13 == 0) {
+                toPrint = toPrint + "Bong";
             }
             if(toPrint.equals("")) {
                 toPrint = Integer.toString(i);
